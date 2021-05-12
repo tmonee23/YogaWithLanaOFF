@@ -1,0 +1,99 @@
+.reiki-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.openingTextContainerReiki{
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+.reikiPhoto{
+    margin: 0%;
+    height: 200px;
+    width: auto;
+    border: 3px solid white;  
+    border-radius: .5rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+.reiki-photo-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reiki-link{
+    margin: 1rem;
+    border: 0px;
+}
+
+.reiki-link:hover{
+    border: 0px;
+    padding: 5px;
+    margin: calc(1rem - 5px);
+
+    animation-name: fadeInBackGround;
+    animation-duration: 1s;
+    background-color:rgba(9, 56, 167, 0.534);
+}
+
+@keyframes fadeInBackGround{
+    from{
+        background-color: rgba(0, 0, 255, 0);
+    }to{
+        opacity: rgba(9, 56, 167, 0.534);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .reiki-content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-content: center;
+        text-align: center;
+        overflow-y: scroll;
+    }
+    .openingTextContainerReiki{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reiki-content::-webkit-scrollbar {
+        width: .5rem;
+    }
+       
+    .reiki-content::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.2);
+        border-radius: 1rem;
+        height: 90%;
+    }
+       
+    .reiki-content::-webkit-scrollbar-thumb {
+        background-color: rgb(18,122,146);
+        outline: 1px solid slategrey;
+        border-radius: 1rem;
+      }
+
+  }
+

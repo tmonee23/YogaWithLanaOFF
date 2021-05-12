@@ -1,0 +1,17 @@
+.page-container{
+  background: linear-gradient(180deg, rgba(18,122,146,1) 0%, rgba(169,191,206,1) 15%, rgba(233,246,248,1) 85%, rgba(77,183,200,1) 100%);
+  background-repeat: no-repeat;
+  margin-top: -6vh;
+  height: 78vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .page-container{
+    height: 86vh;
+  }
+}
+
+
+

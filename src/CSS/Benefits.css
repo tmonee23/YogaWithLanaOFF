@@ -1,0 +1,281 @@
+.benefitsContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    }
+
+.shownPoseContainer{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+
+.poseCard{
+    height: 0vh;
+    width: 0vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+}
+
+.firstPose{
+    position: absolute;
+    margin-top: -50vh;
+    box-shadow: 0px 0px 91px 50px #1b869467;
+    border-radius: 1rem;
+    max-height: 70vh;
+    margin-top: 0vh;
+    align-self: center;
+    width: auto;
+    z-index: 3 ;
+    opacity: 0;
+}
+
+.closePoseBtn{
+    position: absolute;
+    left: auto;
+    bottom: 10vh;
+    width: 10vw;
+    height: 40px;
+    border-radius: 1rem;
+    z-index: 3;
+    animation-duration: 1.5s;
+    animation-name: fedeInCloseButton;
+    background-color: #1b8694;
+    outline: none;
+}
+
+@keyframes fedeInCloseButton {
+    from {
+      width: 0vw;
+      opacity: 0;
+    }
+  
+    to {
+        width: 10vw;
+        opacity: 1;
+    }
+  }
+
+.centralBenefitsPicture{
+    position: relative;
+    height: auto;
+    top: 7vh;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 91px 50px #1b869467;
+    opacity: 0.2;
+}
+
+.buttonContainer{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+}
+
+.benefitsPoseButton{
+    position: absolute;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 91px 50px #1b869467;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid white;
+}
+
+.benefitsPoseButtonOne{
+    top: 45%;
+    left: 5%;
+}
+.benefitsPoseButtonTwo{
+    top: 35%;
+    left: 20%;
+}
+.benefitsPoseButtonThree{
+    bottom: 35%;
+    left: 20%;
+}
+.benefitsPoseButtonFour{
+    top: 20%;
+    left: 35%;
+}
+.benefitsPoseButtonFive{
+    bottom: 20%;
+    left: 35%;
+}
+.benefitsPoseButtonSix{
+    top: 5%;
+    left: 44%;
+}
+.benefitsPoseButtonSeven{
+    bottom: 5%;
+    left: 50%;
+}
+.benefitsPoseButtonEight{
+    top: 5%;
+    right: 44%;
+}
+.benefitsPoseButtonNine{
+    bottom: 5%;
+    right: 48%;
+}
+.benefitsPoseButtonTen{
+    top: 20%;
+    right: 35%;
+}
+.benefitsPoseButtonEleven{
+    bottom: 20%;
+    right: 35%;
+}
+.benefitsPoseButtonTwelve{
+    top: 35%;
+    right: 20%;
+}
+.benefitsPoseButtonThirteen{
+    bottom: 35%;
+    right: 20%;
+}
+.benefitsPoseButtonFourteen{
+    top: 45%;
+    right: 5%;
+}
+
+.benefitsButtonIcon{
+    height: 80px;
+    width: 80px;
+    margin-left: -15px;
+    margin-top: -15px;
+    border-radius: 50%;
+}
+
+.benefitsButtonIcon:hover{
+    border: 2px solid black;
+}
+
+.benefitsButtonIcon:active{
+    border: 3px solid white;
+}
+
+.benefitsPoseButton:focus{
+    outline: none;
+}
+
+@media(max-width: 800px){
+    .benefitsPoseButton{
+        position: relative;
+        border-radius: 50%;
+        left: 0%;
+        top: 0%;
+        height: 50px;
+        width: 50px;
+        box-shadow: 0px 0px 0px 0px #1b869467;
+        background-color: rgba(255, 255, 255, 0);
+        border: 0px solid white;
+        margin: 3rem;
+    }
+
+    .centralBenefitsPicture{
+        position: relative;
+        top: 0vh;
+        height: auto;
+        max-width: 300px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 0px #1b869467;
+        opacity: 0.2;
+    }
+
+    .buttonContainer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    .buttonContainer::-webkit-scrollbar {
+        width: .5rem;
+    }
+       
+    .buttonContainer::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.2);
+        border-radius: 1rem;
+        height: 90%;
+    }
+       
+    .buttonContainer::-webkit-scrollbar-thumb {
+        background-color: rgb(18,122,146);
+        outline: 1px solid slategrey;
+        border-radius: 1rem;
+      }
+
+      .shownPoseContainer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: top;
+        align-content: center;
+    }
+    
+    .poseCard{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+        top: 0;
+    }
+    
+    .firstPose{
+        position: absolute;
+        margin-top: 0vh;
+        box-shadow: 0px 0px 91px 50px #1b869467;
+        border-radius: 1rem;
+        max-width: 90vw;
+        margin-top: 0vh;
+        align-self: center;
+        height: auto;
+        z-index: 3 ;
+        opacity: 0;
+    }
+
+    .closePoseBtn{
+        position: relative;
+        left: 40%;
+        bottom: 0;
+        width: 20%;
+        height: 40px;
+        border-radius: 1rem;
+        z-index: 3;
+        animation-duration: 1.5s;
+        animation-name: fedeInCloseButtonSmall;
+        background-color: #1b8694;
+        outline: none;
+    }
+}
+
+@keyframes fedeInCloseButtonSmall {
+    from {
+      width: 0vw;
+      opacity: 0;
+    }
+  
+    to {
+        width: 20%;
+        opacity: 1;
+    }
+  }
+
+
+
+
+
+

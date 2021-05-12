@@ -1,0 +1,31 @@
+@import "./App.css";
+@import "./Header.css";
+@import "./Navbar.css";
+@import "./Home.css";
+@import "./Benefits.css";
+@import "./About.css";
+@import "./Testimonials.css";
+@import "./Reiki.css";
+@import "./Meditation.css";
+@import "./Gallery.css";
+@import "./GalleryPagesCSS/GalleryPage.css";
+@import "./Workshop.css";
+@import "./Nutrition.css";
+@import "./NutritionPagesCSS//NutritionPage.css";
+@import "./Coaching.css";
+
+body {
+  margin: 0;
+  font-family: 'Merienda One', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  display: flex;
+
+  overflow: hidden;
+  background-color: rgba(18,122,146,1);
+}
